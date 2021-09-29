@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +14,6 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <title>Budget Tracker</title>
 </head>
-
 <body>
   <div class="wrapper">
     <div class="total">
@@ -37,11 +35,11 @@
           <th>Amount</th>
         </thead>
         <tbody id="tbody">
-
+          
         </tbody>
       </table>
     </div>
-
+    
     <canvas id="myChart"></canvas>
   </div>
 
@@ -50,11 +48,11 @@
   <script src="db.js"></script>
   <!-- serviced worker -->
   <script>
-    if ("serviceWorker" in navigator) {
+    if("serviceWorker" in navigator){
       // load
-      window.addEventListener("load", () => {
+      window.addEventListener("load", () =>{
         // navigator -> service worker-> register -> promise -> registration
-        navigator.serviceWorker.register("service-worker.js").then((reg) => {
+        navigator.serviceWorker.register("service-worker.js").then((reg) =>{
           // console.log
           console.log("We have found your service worker file", reg);
         })
@@ -62,5 +60,4 @@
     }
   </script>
 </body>
-
 </html>
