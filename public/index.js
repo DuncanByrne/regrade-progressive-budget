@@ -105,7 +105,7 @@ function sendTransaction(isAdding) {
   }
 
   // add to beginning of current array of data
-  transaction.unshift(transaction);
+  transactions.unshift(transaction);
 
   // re-run logic to populate ui with new record
   populateChart();
@@ -148,6 +148,6 @@ document.querySelector("#add-btn").onclick = function() {
   sendTransaction(true);
 };
 
-document.querySelector("#sub-btn").onclick = function() {
+document.querySelector("#sub-btn").onclick= function() {
   sendTransaction(false);
 };
